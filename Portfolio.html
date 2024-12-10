@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabeel Ulla Khan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .glow {
+            text-shadow: 0 0 10px #4F46E5, 0 0 20px #4F46E5, 0 0 30px #4F46E5;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(79, 70, 229, 0.3);
+        }
+        .hover-effect:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen">
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-500 glow">My Portfolio</h1>
+            <div class="flex gap-4">
+                <a href="mailto:sabeelkhan4404@gmail.com" class="hover:text-indigo-400 transition"><i class="bi bi-envelope"></i></a>
+                <a href="tel:+917090764404" class="hover:text-indigo-400 transition"><i class="bi bi-telephone"></i></a>
+                <a href="https://www.linkedin.com/in/sabeel-khan" target="_blank" class="hover:text-indigo-400 transition"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 pt-24">
+        <section class="grid md:grid-cols-2 gap-8 items-center mb-16">
+            <div class="order-2 md:order-1">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 glow">SABEEL ULLA KHAN</h1>
+                <p class="text-gray-300 mb-6">
+                    Motivated and ambitious BCA graduate. Completed his MCA and seeking to leverage academic knowledge to expand skill set in a dynamic organization. Committed to continuous learning and actively contributing to organizational growth while enhancing personal capabilities. Eager to be part of a team that values innovation, professional development, and excellence.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-2 rounded-lg transition hover-effect">Projects</a>
+                    <a href="#contact" class="border border-indigo-600 px-6 py-2 rounded-lg transition hover-effect">Contact</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <img src="https://images.unsplash.com/photo-1635830625698-3b9bd74671ca" alt="Cyberpunk Theme" class="rounded-full shadow-xl hover-effect">
+            </div>
+        </section>
+
+        <section id="education" class="mb-16 card p-8 rounded-xl">
+            <h2 class="text-2xl font-bold mb-6 text-indigo-400">EDUCATION</h2>
+                <div class="hover-effect p-4 rounded-lg bg-gray-800/50">
+                    <h3 class="font-bold">Siddaganga Institute of Technology</h3>
+                    <p>Master's in Computer Applications (MCA)</p>
+                    <p class="text-gray-400">CGPA: 7.49 | 2022 - 2024</p>
+                </div>
+                <div class="hover-effect p-4 rounded-lg bg-gray-800/50">
+                    <h3 class="font-bold">Vidyavahini First Grade College, Tumkur</h3>
+                    <p>Bachelor's in Computer Applications (BCA)</p>
+                    <p class="text-gray-400">CGPA: 6.84 | 2019 - 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technical-skills" class="py-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Technical Skills</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50">
+                    <h3 class="font-bold text-indigo-600 mb-3">Languages</h3>
+                    <p class="text-gray-300">Java, Python, C/C++, SQL (basics)</p>
+                </div>
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50">
+                    <h3 class="font-bold text-indigo-600 mb-3">Developer Tools</h3>
+                    <p class="text-gray-300">AWS Platform, VS Code, Visual Studio, PyCharm, Jupyter Notebook</p>
+                </div>
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50">
+                    <h3 class="font-bold text-indigo-600 mb-3">Libraries</h3>
+                    <p class="text-gray-300">pandas, NLTK, NumPy, Seaborn</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">AI-Driven Hotel Reservation System</h3>
+                    <p class="text-gray-300 mb-4">HTML/CSS, JavaScript, PHP, SQL, Chatbase, XAMPP</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Designed and implemented a user-friendly booking interface for luxury room reservations</li>
+                        <li>Developed and integrated an AI chatbot for real-time assistance and personalized service</li>
+                        <li>Conducted data collection and analysis through site visits and customer surveys</li>
+                    </ul>
+                </div>
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">E-Commerce Website for Pet Food</h3>
+                    <p class="text-gray-300 mb-4">HTML/CSS, PHP, SQL</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Led the development of an e-commerce platform specializing in pet food and accessories</li>
+                        <li>Improved page load speed by 25% and increased customer satisfaction by 20%</li>
+                        <li>Designed and structured database to optimize data flow and ensure scalability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16">
+            <h2 class="text-3xl font-bold mb-8 section-title">Contact Me</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50 text-center">
+                    <i class="bi bi-envelope text-3xl text-indigo-600 mb-3"></i>
+                    <h3 class="font-bold">Email</h3>
+                    <a href="mailto:sabeelkhan4404@gmail.com" class="text-gray-300 hover:text-indigo-400">sabeelkhan4404@gmail.com</a>
+                </div>
+                <div class="hover-effect p- 6 rounded-lg bg-gray-800/50 text-center">
+                    <i class="bi bi-telephone text-3xl text-indigo-600 mb-3"></i>
+                    <h3 class="font-bold">Phone</h3>
+                    <a href="tel:+917090764404" class="text-gray-300 hover:text-indigo-400">+91 7090764404</a>
+                </div>
+                <div class="hover-effect p-6 rounded-lg bg-gray-800/50 text-center">
+                    <i class="bi bi-geo-alt text-3xl text-indigo-600 mb-3"></i>
+                    <h3 class="font-bold">Address</h3>
+                    <p class="text-gray-300">Shettehalli main road, opp HMS college, Tumkur-572102</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>© 2024 Sabeel Ulla Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach((section) => {
+            section.classList.add('opacity-0', 'transition-opacity', 'duration-1000');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
